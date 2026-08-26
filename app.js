@@ -5,15 +5,27 @@ let nome = "Pedrina";
 const viva = true;
 let altura = 1.64;
 
-if (viva) {
+function calcIdade(ano=2026){
 
-    let saudacao = "Olá, " + nome + "!";
+    let idade = ano - nasc
+    alert(`Dentro da função - idade ${idade}`)
+    
 
-    let mensagem = `Altura: ${altura}m | Idade: ${2025 - nasc}`;
-
-    alert(saudacao + "\n" + mensagem);
-
-} else {
-
-    alert("Você não está viva!");
+    if (idade < 18){
+         menor = true;
+         var podebeber = false;
+    }else{
+         menor = false
+         var podebeber = true
+    }
+    alert(`${nome} pe menor de idade? ${menor}\nIdade:${idade}`)
+    return idade;
 }
+calcIdade();
+alert(`Pode beber: ${podebeber}`)
+
+/*alert(`Fora da função : chamando calcIdade : ${calcIdade(2027)}`) 
+dá erro , pois a variável let não existe fora do escopo dela
+*/ 
+
+alert(`Fora da função : chamando calcIdade : ${calcIdade(2027)}`)
