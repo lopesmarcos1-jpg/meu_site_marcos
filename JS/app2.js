@@ -7,9 +7,3 @@ if (num % 2 == 0) {
     alert(`${num} é ímpar!`);
 }
 
-let dia  = prompt("Escolha um dia da semana\nSendo 1:domingo -  7:sábado")
-dia = Number(dia);
-
-if(dia <= 0 || dia >= 8){
-    alert("Dia inválido!");
-}
